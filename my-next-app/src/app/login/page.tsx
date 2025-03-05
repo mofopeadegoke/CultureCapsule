@@ -23,7 +23,7 @@ export default function Login() {
               <article>
                 <h1>Login</h1>
                 <p>
-                  Don't have an account? <Link href="/signup">Sign up</Link>
+                  Do not have an account? <Link href="/signup">Sign up</Link>
                 </p>
               </article>
               <form action="">

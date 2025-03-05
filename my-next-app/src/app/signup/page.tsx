@@ -21,22 +21,27 @@ export default function Login() {
           <div className="sectCont">
             <section>
               <article>
-                <h1>Login</h1>
+                <h1>Create an Account</h1>
                 <p>
-                  Don't have an account? <Link href="/signup">Sign up</Link>
+                  Already have an account? <Link href="/login">Login</Link>
                 </p>
               </article>
               <form action="">
+                <article className="row">
+                  <input type="text" placeholder="Name" />
+                  <input type="text" placeholder="Surname" />
+                </article>
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Enter your password" />
-                <BtnColor content="Login" />
+                <input type="password" placeholder="Confirm Password" />
+                <BtnColor content="Create Account" />
                 <article className="row">
                   <div></div>
                   <span>or</span>
                   <div></div>
                 </article>
                 <Btn
-                  content="Login with Google"
+                  content="Sign up with Google"
                   alt="Google's logo"
                   url={google}
                 />

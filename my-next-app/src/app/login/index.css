@@ -53,7 +53,13 @@ h1 {
     font-weight: normal;
     margin-bottom: 1.5rem;
 }
-
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.8rem;
+}
 .row input {
     width: 100%;
 }
@@ -90,5 +96,10 @@ footer {
     footer {
         display: none;
     }
-    
+    .bg {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

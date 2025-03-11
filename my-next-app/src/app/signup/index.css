@@ -19,7 +19,7 @@ img {
     flex-direction: column;
     justify-content: center;
 }
-section {
+.sectCont section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -86,7 +86,7 @@ footer {
     main > img {
         display: none;
     }
-    section {
+    .sectCont section {
         row-gap: 1.5rem;
         width: 900px;
     }

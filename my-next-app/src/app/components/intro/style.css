@@ -1,4 +1,4 @@
-section {
+section.intro {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
@@ -8,7 +8,7 @@ section {
     align-items: center;
     position: relative;
 }
-section::before {
+section.intro::before {
     position: absolute;
     content: '';    
     top: 0;
@@ -17,9 +17,9 @@ section::before {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
-section h1 {
+section.intro h1 {
     font-size: 5rem;
 }
-section * {
+section.intro * {
     z-index: 1;
 }

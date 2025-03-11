@@ -17,6 +17,8 @@ export default function Login() {
             width={684}
             height={896}
             sizes="(max-width: 100%)"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mPk5OAwZiACMI4qpK9CAJ4ZAwOFT3r9AAAAAElFTkSuQmCC"
           />
           <div className="sectCont">
             <section>

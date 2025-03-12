@@ -36,12 +36,29 @@
 }
 .swpCont{
     margin-top: 3rem;
-    padding: 0 2rem;
+}
+.swpCont .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.swpCont .swiper {
+    padding: 2rem 0;
 }
 .swpCont img {
     border-radius: 50%;
     max-height: 300px;
 }
-.swpCont article {
-    
+.swiper-pagination {
+    bottom: -5px;
+}
+.swpCont .swiper-pagination-bullet {
+    background-color: #666;
+    opacity: 1;
+}
+
+.swpCont .swiper-pagination-bullet-active {
+    background-color: #fff;
+    opacity: 1;
 }

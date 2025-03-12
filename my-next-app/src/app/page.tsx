@@ -14,9 +14,9 @@ import slideFour from "../../public/clotheEll.png";
 import "./home.css";
 import { Cormorant_Infant } from "next/font/google";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/pagination";
 import Footer from "./components/footer";
 const cormorant = Cormorant_Infant({
   weight: "600",
@@ -93,8 +93,8 @@ export default function Home() {
           <Swiper
             spaceBetween={20}
             slidesPerView={4}
-            navigation={true}
-            modules={[Navigation]}
+            pagination={{ clickable: true, dynamicBullets: true }}
+            modules={[Pagination]}
           >
             <SwiperSlide>
               <article>
@@ -201,6 +201,9 @@ export default function Home() {
               </article>
             </SwiperSlide>
           </Swiper>
+          <div className="row">
+            <Btn content="Read More" color="#fff" />
+          </div>
         </article>
       </section>
       <Footer />

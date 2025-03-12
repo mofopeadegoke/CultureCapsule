@@ -43,3 +43,9 @@ nav .row {
 button {
     cursor: pointer;
 }
+.ftBtm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3rem;
+}

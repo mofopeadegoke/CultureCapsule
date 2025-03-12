@@ -2,16 +2,24 @@ section.cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 1rem;
+    justify-content: space-between;
     row-gap: 2.5rem;
 }
 
 .foodCont {
     padding: 5rem;
     background-color: #1E1E1E;
+    color: #fff;
 }
 
+.foodCont h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.foodCont > p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
 .foodCont .row {
     display: flex;
     flex-direction: row;

@@ -4,7 +4,7 @@ import Intro from "../components/intro";
 import introBg from "../../../public/foodIntro.png";
 import profile from "../../../public/profilePic.png";
 import Btn from "../components/btn";
-import foodOne from "../../../public/foodUno.png";
+import fkOne from "../../../public/fkOne.png";
 import Footer from "../components/footer";
 import Card from "../components/card";
 import { Cormorant_Infant } from "next/font/google";
@@ -18,18 +18,18 @@ export default function Food() {
     <>
       <Navbar />
       <Intro
-        title="Food and Gastronomy"
-        content="Food is a huge part of any culture, and this is no exception. Many traditional recipes have been passed down for generations, but much of our modern generation has lost touch with them. Now, you can explore and try these timeless dishes—bringing the flavors of the past back to life."
+        title="Folklore"
+        content="Folklore is the heart of storytelling, passed down through generations—from fairytales and legends to myths and poetry. In today’s digital world, these traditions are often overlooked. But here, the new generation can rediscover and experience the rich stories that once shaped cultures."
         imgUrl={introBg}
       />
       <section className="foodCont">
-        <h2 className={cormorant.className}>Food and Gastronomy</h2>
+        <h2 className={cormorant.className}>Folklore</h2>
         <p className={cormorant.className}>
           Last updated Date the most recent story | number of available stories
         </p>
         <section className="cards">
           <Card
-            imgUrl={foodOne}
+            imgUrl={fkOne}
             imgAlt="Steak"
             title="Steak"
             userName="Daniel Bentely"
@@ -40,7 +40,7 @@ export default function Food() {
             noOfShares="12"
           />
           <Card
-            imgUrl={foodOne}
+            imgUrl={fkOne}
             imgAlt="Steak"
             title="Steak"
             userName="Daniel Bentely"
@@ -51,7 +51,7 @@ export default function Food() {
             noOfShares="12"
           />
           <Card
-            imgUrl={foodOne}
+            imgUrl={fkOne}
             imgAlt="Steak"
             title="Steak"
             userName="Daniel Bentely"
@@ -62,7 +62,7 @@ export default function Food() {
             noOfShares="12"
           />
           <Card
-            imgUrl={foodOne}
+            imgUrl={fkOne}
             imgAlt="Steak"
             title="Steak"
             userName="Daniel Bentely"
@@ -73,7 +73,7 @@ export default function Food() {
             noOfShares="12"
           />
           <Card
-            imgUrl={foodOne}
+            imgUrl={fkOne}
             imgAlt="Steak"
             title="Steak"
             userName="Daniel Bentely"
@@ -84,7 +84,7 @@ export default function Food() {
             noOfShares="12"
           />
           <Card
-            imgUrl={foodOne}
+            imgUrl={fkOne}
             imgAlt="Steak"
             title="Steak"
             userName="Daniel Bentely"

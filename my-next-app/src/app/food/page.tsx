@@ -2,9 +2,9 @@
 import Navbar from "../components/navbar";
 import Intro from "../components/intro";
 import introBg from "../../../public/foodIntro.png";
-import profile from "../../../public/profile.png";
+import profile from "../../../public/profilePic.png";
 import Btn from "../components/btn";
-import foodOne from "../../../public/foodOne.png";
+import foodOne from "../../../public/foodUno.png";
 import Footer from "../components/footer";
 import Card from "../components/card";
 import "./style.css";
@@ -26,6 +26,9 @@ export default function Food() {
             userName="Daniel Bentely"
             profilePic={profile}
             datePosted="12/03/2025"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum"
+            noOfLikes="50"
+            noOfShares="12"
           />
           <Card
             imgUrl={foodOne}
@@ -34,6 +37,9 @@ export default function Food() {
             userName="Daniel Bentely"
             profilePic={profile}
             datePosted="12/03/2025"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum"
+            noOfLikes="50"
+            noOfShares="12"
           />
           <Card
             imgUrl={foodOne}
@@ -42,6 +48,9 @@ export default function Food() {
             userName="Daniel Bentely"
             profilePic={profile}
             datePosted="12/03/2025"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum"
+            noOfLikes="50"
+            noOfShares="12"
           />
           <Card
             imgUrl={foodOne}
@@ -50,6 +59,9 @@ export default function Food() {
             userName="Daniel Bentely"
             profilePic={profile}
             datePosted="12/03/2025"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum"
+            noOfLikes="50"
+            noOfShares="12"
           />
           <Card
             imgUrl={foodOne}
@@ -58,6 +70,9 @@ export default function Food() {
             userName="Daniel Bentely"
             profilePic={profile}
             datePosted="12/03/2025"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum"
+            noOfLikes="50"
+            noOfShares="12"
           />
           <Card
             imgUrl={foodOne}
@@ -66,6 +81,9 @@ export default function Food() {
             userName="Daniel Bentely"
             profilePic={profile}
             datePosted="12/03/2025"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum"
+            noOfLikes="50"
+            noOfShares="12"
           />
         </section>
         <div className="row">

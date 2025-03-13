@@ -4,6 +4,8 @@
     flex-direction: row;
     column-gap: 2.5rem;
     align-items: center;
+    position: relative;
+    background-color: #fff;
 }
 .hmSectTwo {
     padding: 1rem 5rem;

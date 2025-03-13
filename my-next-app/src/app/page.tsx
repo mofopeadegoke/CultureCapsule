@@ -18,11 +18,59 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Footer from "./components/footer";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useLayoutEffect } from "react";
+gsap.registerPlugin(ScrollTrigger);
 const cormorant = Cormorant_Infant({
   weight: "600",
   subsets: ["latin"],
 });
 export default function Home() {
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to(".hmSectOne", {
+        scrollTrigger: {
+          trigger: ".intro",
+          start: "top top",
+          pin: true,
+          end: "+=300",
+          pinSpacing: false,
+          scrub: 1,
+          toggleActions: "play none none reverse",
+          anticipatePin: 1,
+        },
+        y: "-100%",
+      });
+      gsap.to(".hmSectTwo", {
+        scrollTrigger: {
+          trigger: ".intro",
+          start: "top top",
+          pin: true,
+          end: "+=300",
+          pinSpacing: false,
+          scrub: 1,
+          toggleActions: "play none none reverse",
+          anticipatePin: 1,
+        },
+        y: "-100%",
+      });
+      gsap.to(".hmSectThree", {
+        scrollTrigger: {
+          trigger: ".intro",
+          start: "top top",
+          pin: true,
+          end: "+=300",
+          pinSpacing: false,
+          scrub: 1,
+          toggleActions: "play none none reverse",
+          anticipatePin: 1,
+        },
+        y: "-100%",
+      });
+    });
+    return () => ctx.revert();
+  }, []);
   return (
     <>
       <Navbar />

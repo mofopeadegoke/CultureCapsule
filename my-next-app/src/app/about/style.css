@@ -1,0 +1,17 @@
+section.abMain {
+    padding: 0 3rem;
+    background-color: #F4EFEB;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+section.abMain article {
+    padding: 4rem 0;
+}
+section.abMain article:not(:last-child) {
+    border-bottom: 1px solid #000;
+}
+section.abMain article h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}

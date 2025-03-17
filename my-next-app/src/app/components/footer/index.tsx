@@ -5,7 +5,7 @@ import illus from "../../../../public/fcyLogoDark.png";
 import "./style.css";
 export default function Footer() {
   return (
-    <section>
+    <section className="ftCont">
       <nav>
         <Image
           src={logo}

@@ -75,7 +75,7 @@ button {
     display: none;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1150px) {
     nav ul.web, nav div.row {
         display: none;
     }

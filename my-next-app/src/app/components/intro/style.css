@@ -23,3 +23,12 @@ section.intro h1 {
 section.intro * {
     z-index: 1;
 }
+@media all and (max-width: 1000px) {
+    section.intro {
+        padding: 2rem;
+        font-size: 1.25rem;
+    }
+    section.intro h1 {
+        font-size: 3rem;
+    }
+}

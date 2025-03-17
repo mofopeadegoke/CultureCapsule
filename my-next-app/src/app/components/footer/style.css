@@ -49,3 +49,9 @@ button {
     justify-content: center;
     margin-bottom: 3rem;
 }
+@media all and (max-width: 750px) {
+    .ftCont{
+        display: none;
+    }
+    
+}

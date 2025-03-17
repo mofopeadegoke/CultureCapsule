@@ -50,7 +50,9 @@ export default function Home() {
             Quisquam natus adipisci temporibus asperiores, deserunt
             exercitationem consequatur esse nulla illum?
           </p>
-          <Btn content="Read More" color="#000" />
+          <div className="center">
+            <Btn content="Read More" color="#000" />
+          </div>
         </article>
       </section>
       <section className="hmSectTwo">
@@ -66,7 +68,9 @@ export default function Home() {
             Quisquam natus adipisci temporibus asperiores, deserunt
             exercitationem consequatur esse nulla illum?
           </p>
-          <Btn content="Read More" color="#000" />
+          <div className="center">
+            <Btn content="Read More" color="#000" />
+          </div>
         </article>
         <Image
           src={imgTwo}
@@ -94,6 +98,20 @@ export default function Home() {
             spaceBetween={20}
             slidesPerView={4}
             pagination={{ clickable: true, dynamicBullets: true }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 2,
+              },
+              800: {
+                slidesPerView: 3,
+              },
+              1024: {
+                slidesPerView: 4,
+              },
+            }}
             modules={[Pagination]}
           >
             <SwiperSlide>

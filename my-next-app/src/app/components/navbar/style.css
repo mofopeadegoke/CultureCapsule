@@ -6,6 +6,7 @@ nav {
     flex-direction: row;
     padding: 1rem 5rem;
     justify-content: space-between;
+    position: relative;
 }
 nav ul {
     display: flex;
@@ -41,4 +42,52 @@ nav .row {
 }
 button {
     cursor: pointer;
+}
+.mobileNavMain  {
+    position: absolute;
+    top: 8.8rem;
+    left: 0;
+    background-color: #000;
+    opacity: 0.9;
+    font-size: 1.2rem;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    row-gap: 1rem;
+    cursor: pointer;
+}
+.intCont {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.burgBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mobile {
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+    nav ul.web, nav div.row {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+    .navMain {
+        padding: 1rem;
+    }
+    nav > img {
+        width: 200px;
+        height: 104.16px;
+    }
+    
 }

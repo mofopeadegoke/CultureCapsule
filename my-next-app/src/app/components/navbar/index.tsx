@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import logo from "../../../../public/cultureCapsuleLogo.png";
 import search from "../../../../public/mgGlass.png";
@@ -27,7 +28,7 @@ export default function Navbar() {
     return () => {
       burgBtnEl.removeEventListener("click", handleClick);
     };
-  }, []);
+  }, [setShow]);
   return (
     <nav className="navMain">
       <Image

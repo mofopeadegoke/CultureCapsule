@@ -21,6 +21,7 @@ export default function Food() {
         title="Food and Gastronomy"
         content="Food is a huge part of any culture, and this is no exception. Many traditional recipes have been passed down for generations, but much of our modern generation has lost touch with them. Now, you can explore and try these timeless dishes—bringing the flavors of the past back to life."
         imgUrl={introBg}
+        titleTranslation="Yiyecek ve Gastronomi"
       />
       <section className="foodCont">
         <h2 className={cormorant.className}>Food and Gastronomy</h2>

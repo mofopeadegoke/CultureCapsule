@@ -21,6 +21,7 @@ export default function Food() {
         title="Arts & Culture"
         content="Art and culture are always unique, and in Cyprus, the elderly hold a wealth of traditions with nowhere to share them. Here, they finally can. Explore their crafts, learn how they’re made, and turn these timeless skills into something new—preserving the past while inspiring the future."
         imgUrl={introBg}
+        titleTranslation="Sanat ve Kültür"
       />
       <section className="foodCont">
         <h2 className={cormorant.className}>Arts & Culture</h2>

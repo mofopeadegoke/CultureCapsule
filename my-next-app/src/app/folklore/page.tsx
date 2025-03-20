@@ -21,6 +21,7 @@ export default function Food() {
         title="Folklore"
         content="Folklore is the heart of storytelling, passed down through generations—from fairytales and legends to myths and poetry. In today’s digital world, these traditions are often overlooked. But here, the new generation can rediscover and experience the rich stories that once shaped cultures."
         imgUrl={introBg}
+        titleTranslation="Folklor"
       />
       <section className="foodCont">
         <h2 className={cormorant.className}>Folklore</h2>

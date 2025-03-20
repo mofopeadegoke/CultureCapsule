@@ -18,29 +18,39 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Footer from "./components/footer";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const cormorant = Cormorant_Infant({
   weight: "600",
   subsets: ["latin"],
 });
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+    });
+  }, []);
   return (
     <>
       <Navbar />
       <Intro
-        title="Culture Capsule"
-        content="Welcome to Culture Capsule, a unque and simple way to share content from wonderful stories & folklore to historical literature "
+        title="Welcome to Culture Capsule"
+        content="Discover the rich culture and heritage of North Cyprus"
         imgUrl={bg}
+        titleTranslation="Kültür Kapsülüne Hoş Geldiniz"
       />
       <section className="hmSectOne">
         <Image
           src={imgOne}
           alt="Flat Sharwama bread"
-          width={469}
-          height={377}
+          width={600}
+          height={482.315}
           placeholder="blur"
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mPk5OAwZiACMI4qpK9CAJ4ZAwOFT3r9AAAAAElFTkSuQmCC"
+          data-aos="fade-right"
         />
-        <article>
+        <article data-aos="fade-left">
           <h2 className={cormorant.className}>Discover new recipes</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
@@ -56,7 +66,7 @@ export default function Home() {
         </article>
       </section>
       <section className="hmSectTwo">
-        <article>
+        <article data-aos="fade-right">
           <h2 className={cormorant.className}>
             Explore the rich legacy from Cypriot elders{" "}
           </h2>
@@ -75,14 +85,15 @@ export default function Home() {
         <Image
           src={imgTwo}
           alt="Old people having a nice time in a cultural setting"
-          width={469}
-          height={377}
+          width={600}
+          height={482.315}
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mPk5OAwZiACMI4qpK9CAJ4ZAwOFT3r9AAAAAElFTkSuQmCC"
           placeholder="blur"
+          data-aos="fade-left"
         />
       </section>
       <section className="hmSectThree">
-        <article>
+        <article data-aos="fade-up">
           <h2 className={cormorant.className}>Discover the arts & culture</h2>
           <p>
             Preserving culture matters—it holds the ideas, art, and innovations
@@ -93,7 +104,7 @@ export default function Home() {
             you to discover.
           </p>
         </article>
-        <article className="swpCont">
+        <article className="swpCont" data-aos="zoom-in-up">
           <Swiper
             spaceBetween={20}
             slidesPerView={4}

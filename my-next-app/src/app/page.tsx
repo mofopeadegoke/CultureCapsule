@@ -51,7 +51,7 @@ export default function Home() {
             exercitationem consequatur esse nulla illum?
           </p>
           <div className="center">
-            <Btn content="Read More" color="#000" />
+            <Btn content="Read More" color="#000" url="/food" />
           </div>
         </article>
       </section>
@@ -69,7 +69,7 @@ export default function Home() {
             exercitationem consequatur esse nulla illum?
           </p>
           <div className="center">
-            <Btn content="Read More" color="#000" />
+            <Btn content="Read More" color="#000" url="/folklore" />
           </div>
         </article>
         <Image
@@ -220,7 +220,7 @@ export default function Home() {
             </SwiperSlide>
           </Swiper>
           <div className="row">
-            <Btn content="Read More" color="#fff" />
+            <Btn content="Read More" color="#fff" url="arts" />
           </div>
         </article>
       </section>

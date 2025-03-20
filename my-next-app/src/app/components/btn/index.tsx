@@ -22,7 +22,10 @@ export default function Btn({ imgurl, alt, color, content, url }: nrmBtnProps) {
   ) : (
     <button
       className="btn"
-      style={{ color: color || "#fff", borderColor: color || "#fff" }}
+      style={{
+        color: color || "#fff",
+        borderColor: color || "#fff",
+      }}
     >
       {imgurl && alt && <Image src={imgurl} alt={alt}></Image>}
       <span>{content}</span>

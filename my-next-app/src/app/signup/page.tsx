@@ -45,7 +45,7 @@ export default function Login() {
                 <Btn
                   content="Sign up with Google"
                   alt="Google's logo"
-                  url={google}
+                  imgurl={google}
                 />
               </form>
             </section>
@@ -54,8 +54,9 @@ export default function Login() {
         <footer>
           <Btn
             content="Go back to website"
-            url={leftImg}
+            imgurl={leftImg}
             alt="An arrow pointing to the left"
+            url="/"
           />
         </footer>
       </div>

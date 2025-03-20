@@ -7,6 +7,9 @@ import Btn from "../components/btn";
 import foodOne from "../../../public/foodUno.png";
 import Footer from "../components/footer";
 import Card from "../components/card";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { Cormorant_Infant } from "next/font/google";
 const cormorant = Cormorant_Infant({
   weight: "400",
@@ -14,6 +17,9 @@ const cormorant = Cormorant_Infant({
 });
 import "./style.css";
 export default function Food() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <>
       <Navbar />
@@ -28,7 +34,7 @@ export default function Food() {
         <p className={cormorant.className}>
           Last updated Date the most recent story | number of available stories
         </p>
-        <section className="cards">
+        <section className="cards" data-aos="zoom-in-up">
           <Card
             imgUrl={foodOne}
             imgAlt="Steak"

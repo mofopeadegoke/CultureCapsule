@@ -9,7 +9,7 @@
     justify-content: center;
 }
 .hmSectTwo {
-    padding: 1rem 5rem;
+    padding: 5rem;
     display: flex;
     flex-direction: row;
     column-gap: 5rem;
@@ -45,11 +45,6 @@
 }
 :is(.hmSectOne, .hmSectTwo, .hmSectThree) p {
     font-size: 1.5rem;
-}
-.hmSectOne,
-.hmSectTwo,
-.hmSectThree {
-    height: 100vh;
 }
 .swpCont{
     max-width: 1300px;

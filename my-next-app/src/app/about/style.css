@@ -4,7 +4,6 @@ section.abMain {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 100vh;
 }
 section.abMain article {
     padding: 4rem 0;

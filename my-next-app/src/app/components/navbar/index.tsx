@@ -1,12 +1,15 @@
 "use client";
 import Image from "next/image";
-import logo from "../../../../public/cultureCapsuleLogo.png";
+// import logo from "../../../../public/cultureCapsuleLogo.png";
 import search from "../../../../public/mgGlass.png";
 import burger from "../../../../public/burger.png";
 import Link from "next/link";
 import BtnColor from "../btnColor";
 import { useState, useEffect, useRef } from "react";
 import "./style.css";
+import Logo from "../logo";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 export default function Navbar() {
   const setShow = useState(false)[1]; // This is the setter function in which the state value cannot be accessed directly except through the setter function
   const mobContentEl = useRef<HTMLElement | null>(null);
@@ -31,12 +34,12 @@ export default function Navbar() {
   }, [setShow]);
   return (
     <nav className="navMain">
-      <Image
-        src={logo}
-        alt="A feather with text which says culture capsule by the side"
-        width={300}
-        height={157.9}
-      />
+      <Canvas camera={{ position: [5, 5, 5], fov: 45, zoom: 3 }} shadows={true}>
+        <ambientLight intensity={10} />
+
+        <Logo />
+        <OrbitControls />
+      </Canvas>
       <ul className="web">
         <li>
           <a href="/">Home</a>

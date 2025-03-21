@@ -4,9 +4,12 @@ img {
 nav {
     display: flex;
     flex-direction: row;
-    padding: 1rem 5rem;
+    padding: 1rem 5rem;    
     justify-content: space-between;
     position: relative;
+}
+canvas {
+    max-width: 90%;
 }
 nav ul {
     display: flex;
